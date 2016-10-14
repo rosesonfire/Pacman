@@ -97,7 +97,7 @@ def setupRoomOne(all_sprites_list):
 
 def setupGate(all_sprites_list):
       gate = pygame.sprite.RenderPlain()
-      gate.add(Wall(282,242,42,2,white))
+      # gate.add(Wall(282,242,42,2,white))
       all_sprites_list.add(gate)
       return gate
 
@@ -348,7 +348,7 @@ screen = pygame.display.set_mode([606, 606])
 
 
 # Set the title of the window
-pygame.display.set_caption('Pacman')
+pygame.display.set_caption('(Py)ConMan')
 
 # Create a surface we can draw on
 background = pygame.Surface(screen.get_size())
@@ -370,8 +370,8 @@ font = pygame.font.Font("freesansbold.ttf", 24)
 w = 303-16 #Width
 p_h = (5*60)+19 #Pacman height
 p_w = 303-16-210 #Pacman width
-m_h = (4*60)+19 #Monster height
-b_h = (3*60)+19 #Binky height
+m_h = (4*60)+19+(60*4) #Monster height
+b_h = (3*60)+19+(60*4) #Binky height
 i_w = 303-16-32 #Inky width
 c_w = 303+(32-16) #Clyde width
 
