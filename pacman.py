@@ -12,8 +12,8 @@ red = (255,0,0)
 purple = (255,0,255)
 yellow   = ( 255, 255,   0)
 
-Trollicon=pygame.image.load('images/Trollman.png')
-pygame.display.set_icon(Trollicon)
+PacManIcon=pygame.image.load('images/pacman.png')
+pygame.display.set_icon(PacManIcon)
 
 #Add music
 # pygame.mixer.init()
@@ -44,9 +44,15 @@ def setupRoomOne(all_sprites_list):
     # This is a list of walls. Each is in the form [x, y, width, height]
     walls = [ [0,0,6,600],
 	      [60,180,6,150],
-              [60,180,120,6],
+              [60,180,240,6],
               [120,240,6,6],
               [180,180,6,60],
+              [240,180,6,60],
+              [120,300,6,60],
+              [120,300,90,6],
+              [210,300,6,60],
+              [270,300,6,60],
+              [300,180,6,60],
               # [0,0,600,6],
               # [0,600,606,6],
               # [600,0,6,606],
